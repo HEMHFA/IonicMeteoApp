@@ -6,13 +6,30 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>home</ion-title>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>La météo dans ma ville</ion-title>
   </ion-navbar>
+
+  <ion-toolbar color="secondary">
+    <ion-title>Nantes</ion-title>
+  </ion-toolbar>
 
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+  <ion-item>
+    <ion-label>Voir la météo pour : </ion-label>
+    <ion-select>
+      <ion-option>Lundi</ion-option>
+      <ion-option>Mardi</ion-option>
+      <ion-option>Mercredi</ion-option>
+      <ion-option>Jeudi</ion-option>
+      <ion-option>Vendredi</ion-option>
+      <ion-option>Samedi</ion-option>
+      <ion-option>Dimanche</ion-option>
+    </ion-select>
+  </ion-item> 
 </ion-content>
