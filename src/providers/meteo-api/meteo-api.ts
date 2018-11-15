@@ -20,7 +20,7 @@ export class MeteoApiProvider {
   }
 
   getAllDays(): Observable<any> {
-    return this.http.get(`${this.baseUrl}`);
+    return this.http.get(this.baseUrl);
   }
 
 }
